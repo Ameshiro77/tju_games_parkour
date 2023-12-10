@@ -1,0 +1,4 @@
+execute if entity @a[x=-1,y=21,z=6,dx=0,dz=0,dy=1,scores={rank=4..}] run tellraw @a[x=-1,y=21,z=6,dx=0,dz=0,dy=1,scores={rank=4..}] {"text":"已传送至hard关卡大厅!","color":"gold"}
+execute if entity @a[x=-1,y=21,z=6,dx=0,dz=0,dy=1,scores={rank=4..}] run tp @a[x=-1,y=21,z=6,dx=0,dz=0,dy=1,scores={rank=4..}] -1 22 10
+execute if entity @a[x=-1,y=21,z=6,dx=0,dz=0,dy=1,scores={rank=0..3}] run tellraw @a[x=-1,y=21,z=6,dx=0,dz=0,dy=1,scores={rank=0..3}] {"text":"您至少需要通关4关才能挑战hard关卡！","color":"dark_red","bold":true}
+execute if entity @a[x=-1,y=21,z=6,dx=0,dz=0,dy=1,scores={rank=0..3}] run tp @a[x=-1,y=21,z=6,dx=0,dz=0,dy=1,scores={rank=0..3}] -1 22 0

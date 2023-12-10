@@ -1,0 +1,1 @@
+#execute as @a[x=0,y=21,z=0,distance=..3] run scoreboard players reset @s time

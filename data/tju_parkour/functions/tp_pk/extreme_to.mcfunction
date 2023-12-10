@@ -1,0 +1,4 @@
+execute if entity @a[x=-7,y=21,z=0,dx=0,dz=0,dy=1,scores={rank=6..}] run tellraw @a[x=-7,y=21,z=0,dx=0,dz=0,dy=1,scores={rank=6..}] {"text":"已传送至extreme关卡大厅!","color":"red"}
+execute if entity @a[x=-7,y=21,z=0,dx=0,dz=0,dy=1,scores={rank=6..}] run tp @a[x=-7,y=21,z=0,dx=0,dz=0,dy=1,scores={rank=6..}] -11 22 0
+execute if entity @a[x=-7,y=21,z=0,dx=0,dz=0,dy=1,scores={rank=0..5}] run tellraw @a[x=-7,y=21,z=0,dx=0,dz=0,dy=1,scores={rank=0..5}] {"text":"您至少需要通关6关才能挑战extreme关卡！","color":"dark_red","bold":true}
+execute if entity @a[x=-7,y=21,z=0,dx=0,dz=0,dy=1,scores={rank=0..5}] run tp @a[x=-7,y=21,z=0,dx=0,dz=0,dy=1,scores={rank=0..5}] -1 22 0
