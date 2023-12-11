@@ -20,3 +20,5 @@ execute as @a[x=71,y=29,z=15,dx=0,dy=1,dz=0] run function tju_parkour:tp_back/le
 execute as @a[x=15,y=30,z=72,dx=0,dy=1,dz=0] run function tju_parkour:tp_back/level7
 #level8
 execute as @a[x=-2,y=30,z=72,dx=0,dy=1,dz=0] run function tju_parkour:tp_back/level8
+#level8
+execute as @a[x=-17,y=29,z=72,dx=0,dy=1,dz=0] run function tju_parkour:tp_back/level9

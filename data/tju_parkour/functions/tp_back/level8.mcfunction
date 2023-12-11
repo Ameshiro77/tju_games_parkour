@@ -18,7 +18,8 @@ execute if score @s end >= @s level_8 run tp @s 0 22 0
 
 #tp之后，要判断位置，函数不能中断
 #如果更快了，刷新记录；且如果更快了，加分
-
+#更快的保存到l
+execute as @a[x=-2,y=30,z=72,dx=0,dy=1,dz=0] run scoreboard players operation @s level_8 < @s end
 #tp前:如果全服记录,通告
 execute as @a[x=-2,y=30,z=72,dx=0,dy=1,dz=0] if score #best8 best > @s end run tellraw @a ["恭喜",{"selector":"@s","color": "aqua"},"刷新了第8关全服最快记录!共用时:",{"score":{"name":"@s","objective":"end"}},"s!"]
 execute as @a[x=-2,y=30,z=72,dx=0,dy=1,dz=0] if score #best8 best > @s end run scoreboard players operation #best8 best = @s end
@@ -27,6 +28,7 @@ execute as @a[x=-2,y=30,z=72,dx=0,dy=1,dz=0] if score @s level_8 > @s end run te
 #此时：如果end>limit，那么不加分，tp
 execute as @a[x=-2,y=30,z=72,dx=0,dy=1,dz=0] if score @s end > #limit_8 limit run tellraw @a [{"text":"恭喜","color":"green"},{"selector":"@s","color": "aqua"},{"text":"通过第8关!","color":"green"}]
 execute as @a[x=-2,y=30,z=72,dx=0,dy=1,dz=0] if score @s end > #limit_8 limit run spawnpoint @s -1 22 0
+execute as @a[x=-2,y=30,z=72,dx=0,dy=1,dz=0] if score @s end > #limit_8 limit run scoreboard players operation @s level_8 < @s end
 #tp:
 execute as @a[x=-2,y=30,z=72,dx=0,dy=1,dz=0] if score @s end > #limit_8 limit run tp @s 0 22 0
 #如果：end进了limit，但是level_x没进，那么limit-

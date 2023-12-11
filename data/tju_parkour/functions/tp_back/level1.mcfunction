@@ -25,6 +25,7 @@ execute as @a[x=-17,y=28,z=-73,dx=0,dy=1,dz=0] if score @s level_1 > @s end run 
 #此时：如果end>limit，那么不加分，tp
 execute as @a[x=-17,y=28,z=-73,dx=0,dy=1,dz=0] if score @s end > #limit_1 limit run tellraw @a [{"text":"恭喜","color":"green"},{"selector":"@s","color": "aqua"},{"text":"通过第1关!","color":"green"}]
 execute as @a[x=-17,y=28,z=-73,dx=0,dy=1,dz=0] if score @s end > #limit_1 limit run spawnpoint @s -1 22 0
+execute as @a[x=-17,y=28,z=-73,dx=0,dy=1,dz=0] if score @s end > #limit_1 limit run scoreboard players operation @s level_1 < @s end
 #tp
 execute as @a[x=-17,y=28,z=-73,dx=0,dy=1,dz=0] if score @s end > #limit_1 limit run tp @s 0 22 0 
 #如果：end进了limit，但是level_x没进，那么limit-
