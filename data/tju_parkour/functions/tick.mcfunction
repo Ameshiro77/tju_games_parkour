@@ -8,5 +8,9 @@ function tju_parkour:achievements/achieve
 # 计时器
 function tju_parkour:timer/timertick
 
-# 头衔
-function tju_parkour:team/team_rank
+#初始传送
+function tju_parkour:teleport/spawn_tp
+
+#处理查询触发
+function tju_parkour:trigger/query_best
+function tju_parkour:trigger/query_personal
