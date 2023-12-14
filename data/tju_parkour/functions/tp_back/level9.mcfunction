@@ -2,15 +2,16 @@ execute unless score @s 9_passed matches 1 run scoreboard players add @s rank 1
 function tju_parkour:team/team_rank
 execute unless score @s 9_passed matches 1 run scoreboard players set @s 9_passed 1
 execute run clear @s
+#关闭计时器
+execute as @s if score @s is_pk matches 1 run title @s actionbar " "
+execute as @s if score @s is_pk matches 1 run scoreboard players set @s is_pk 0
 #如果第一次通关，+100
 execute if score @s level_9 matches 2147483647 run scoreboard players add @s scores 600
 execute if score @s level_9 matches 2147483647 run tellraw @s "第一次通关,您获得了600分!"
 # time->end  end=end-start end现在存的是通关时间
-execute run scoreboard players operation @s end = #time time
+execute run scoreboard players operation @s end = @s time_player
 execute run scoreboard players operation @s end -= @s start
-
 #如果更慢了，直接tp走
-
 execute if score @s end >= @s level_9 run tellraw @a [{"text":"恭喜","color":"green"},{"selector":"@s","color": "aqua"},{"text":"通过第9关!","color":"green"}]  
 execute if score @s end >= @s level_9 run spawnpoint @s -1 22 0
 execute if score @s end >= @s level_9 run tellraw @s ["本次用时:",{"score":{"name":"@s","objective":"end"}},"s!"]
@@ -40,6 +41,8 @@ execute as @a[x=-17,y=29,z=72,dx=0,dy=1,dz=0] run scoreboard players operation @
 #最后除以倍率，存到start
 execute as @a[x=-17,y=29,z=72,dx=0,dy=1,dz=0] run scoreboard players operation @s start *= #hard difficulty
 execute as @a[x=-17,y=29,z=72,dx=0,dy=1,dz=0] if score @s level_9 > @s end run tellraw @s ["因为刷新记录，你获得了:",{"score":{"name":"@s","objective":"start"}},"分!"]
+#更快的保存到l1
+execute as @a[x=-17,y=29,z=72,dx=0,dy=1,dz=0] run scoreboard players operation @s level_9 < @s end
 #加到总分
 execute as @a[x=-17,y=29,z=72,dx=0,dy=1,dz=0] run scoreboard players operation @s scores += @s start
 #以前结束，传送回去

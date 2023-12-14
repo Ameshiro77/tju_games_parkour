@@ -9,7 +9,7 @@ tellraw @s ["level6:",{"score":{"name":"#best6","objective":"best"},"color": "gr
 tellraw @s ["level7:",{"score":{"name":"#best7","objective":"best"},"color": "green"},"s"]
 tellraw @s ["level8:",{"score":{"name":"#best8","objective":"best"},"color": "green"},"s"]
 tellraw @s ["level9:",{"score":{"name":"#best9","objective":"best"},"color": "green"},"s"]
-tellraw @s ["level10",{"score":{"name":"#best10","objective":"best"},"color": "green"},"s"]
+tellraw @s ["level10:",{"score":{"name":"#best10","objective":"best"},"color": "green"},"s"]
 tellraw @s ["level11:",{"score":{"name":"#best11","objective":"best"},"color": "green"},"s"]
 tellraw @s ["level12:",{"score":{"name":"#best12","objective":"best"},"color": "green"},"s"]
 tellraw @s ["============================"]

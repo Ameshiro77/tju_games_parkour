@@ -1,4 +1,5 @@
 #倍率
+scoreboard objectives remove difficulty
 scoreboard objectives add difficulty dummy
 scoreboard players set #easy difficulty 4
 scoreboard players set #medium difficulty 3

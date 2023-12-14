@@ -9,7 +9,7 @@ tellraw @s ["level6:",{"score":{"name":"@s","objective":"level_6"},"color": "gre
 tellraw @s ["level7:",{"score":{"name":"@s","objective":"level_7"},"color": "green"},"s"]
 tellraw @s ["level8:",{"score":{"name":"@s","objective":"level_8"},"color": "green"},"s"]
 tellraw @s ["level9:",{"score":{"name":"@s","objective":"level_9"},"color": "green"},"s"]
-tellraw @s ["level10",{"score":{"name":"@s","objective":"level_10"},"color": "green"},"s"]
+tellraw @s ["level10:",{"score":{"name":"@s","objective":"level_10"},"color": "green"},"s"]
 tellraw @s ["level11:",{"score":{"name":"@s","objective":"level_11"},"color": "green"},"s"]
 tellraw @s ["level12:",{"score":{"name":"@s","objective":"level_12"},"color": "green"},"s"]
 tellraw @s ["============================"]

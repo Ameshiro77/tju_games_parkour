@@ -57,3 +57,14 @@ fill 15 30 72 15 31 72 minecraft:end_gateway{Age:280}
 fill -2 31 72 -2 32 72 minecraft:end_gateway{Age:280}
 #l9
 fill -17 30 72 -17 31 72 minecraft:end_gateway{Age:280}
+#l10
+fill -73 29 12 -73 30 12 minecraft:end_gateway{Age:280}
+
+#l11
+fill -74 31 -2 -74 32 -2 minecraft:end_gateway{Age:280}
+
+#l12
+fill -73 30 -19 -73 31 -19 minecraft:end_gateway{Age:280}
+
+#??
+fill -1 26 0 -1 27 0 minecraft:end_gateway{Age:280}

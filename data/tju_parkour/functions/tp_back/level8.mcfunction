@@ -2,11 +2,14 @@ execute unless score @s 8_passed matches 1 run scoreboard players add @s rank 1
 function tju_parkour:team/team_rank
 execute unless score @s 8_passed matches 1 run scoreboard players set @s 8_passed 1
 execute run clear @s
+#关闭计时器
+execute as @s if score @s is_pk matches 1 run title @s actionbar " "
+execute as @s if score @s is_pk matches 1 run scoreboard players set @s is_pk 0
 #如果第一次通关，+100
 execute if score @s level_8 matches 2147483647 run scoreboard players add @s scores 600
 execute if score @s level_8 matches 2147483647 run tellraw @s "第一次通关,您获得了600分!"
 # time->end  end=end-start end现在存的是通关时间
-execute run scoreboard players operation @s end = #time time
+execute run scoreboard players operation @s end = @s time_player
 execute run scoreboard players operation @s end -= @s start
 
 #如果更慢了，直接tp走
