@@ -43,6 +43,9 @@ execute as @a[x=-14,y=21,z=0,dx=0,dy=1,dz=0] run function tju_parkour:tp_pk/leve
 #l12
 execute as @a[x=-14,y=21,z=-2,dx=0,dy=1,dz=0] run function tju_parkour:tp_pk/level12_to
 
+#nightmare
+execute as @a[x=-1,y=26,z=0,dx=0,dy=1,dz=0] run function tju_parkour:tp_pk/nightmare_to
+
 # 起始地点的传送
 execute as @a[x=-6,y=19,z=2,dx=0,dz=-4,dy=1] run function tju_parkour:init/reset_scores
 execute as @a[x=-6,y=19,z=2,dx=0,dz=-4,dy=1] run function tju_parkour:tp_pk/hall_to

@@ -1,0 +1,1 @@
+summon minecraft:armor_stand ~ ~ ~ {CustomName:"{\"text\":\"你可以使用/trigger来查询对应积分!\",\"bold\":true}",Tags:["hint"],Invulnerable:1b,NoGravity:1b,Invisible:1,CustomNameVisible:1}

@@ -1,14 +1,17 @@
 # 检测传送
 function tju_parkour:teleport/teleport_to_pk
 function tju_parkour:teleport/teleport_back
+function tju_parkour:nightmare/rechallenge
 
 # 成就
-function tju_parkour:achievements/achieve
-
+# if block必须写at @s！！！
+execute as @a at @s if block ~ ~ ~ oak_pressure_plate run function tju_parkour:achievements/achieve
+execute as @a at @s if block ~ ~ ~ oak_pressure_plate run function tju_parkour:nightmare/through
+function tju_parkour:achievements/extra_award
 # 计时器
 function tju_parkour:timer/timertick
 
-#初始传送
+#初始传送:
 function tju_parkour:teleport/spawn_tp
 
 #打印时间

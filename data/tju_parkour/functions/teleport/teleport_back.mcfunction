@@ -1,6 +1,7 @@
 # 使用道具传送回来
 execute as @a[scores={tp_back=1..},nbt={SelectedItem:{tag:{sc:1}}}] run scoreboard players reset @s is_pk
 execute as @a[scores={tp_back=1..},nbt={SelectedItem:{tag:{sc:1}}}] run title @s actionbar " "
+execute as @a[scores={tp_back=1..},nbt={SelectedItem:{tag:{sc:1}}}] run spawnpoint @s 0 22 0
 execute as @a[scores={tp_back=1..},nbt={SelectedItem:{tag:{sc:1}}}] run tp @s 0 22 0
 execute as @a[scores={tp_back=1..},nbt={SelectedItem:{tag:{sc:1}}}] run clear @s
 execute as @a[scores={tp_back=1..}] run scoreboard players reset @s tp_back
@@ -30,3 +31,5 @@ execute as @a[x=-73,y=28,z=12,dx=0,dy=1,dz=0] run function tju_parkour:tp_back/l
 execute as @a[x=-74,y=30,z=-2,dx=0,dy=1,dz=0] run function tju_parkour:tp_back/level11
 #level12
 execute as @a[x=-73,y=29,z=-19,dx=0,dy=1,dz=0] run function tju_parkour:tp_back/level12
+#nightmare
+execute as @a[x=-21,y=4,z=0,dx=0,dy=1,dz=0] run tp -1 22 0

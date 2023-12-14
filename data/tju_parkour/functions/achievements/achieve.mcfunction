@@ -72,7 +72,7 @@ execute as @a[x=-60,y=31,z=-1,dx=0,dy=0,dz=0] unless score @s achievement_12 mat
 execute as @a[x=-60,y=31,z=-1,dx=0,dy=0,dz=0] unless score @s achievement_12 matches 1 run scoreboard players set @s achievement_12 1
 
 #12-2
-execute as @a[x=-56,y=23,z=-11,dx=0,dy=0,dz=0] unless score @s achievement_14 matches 1 run tellraw @a [{"selector":"@s","color": "aqua"},{"text": "达成了成就:[至臻旋转活板门!]! 分数+500","color":"white","bold": true}]
+execute as @a[x=-56,y=23,z=-11,dx=0,dy=0,dz=0] unless score @s achievement_14 matches 1 run tellraw @a [{"selector":"@s","color": "aqua"},{"text": "达成了成就:[看我的,活板门!]! 分数+500","color":"white","bold": true}]
 execute as @a[x=-56,y=23,z=-11,dx=0,dy=0,dz=0] unless score @s achievement_14 matches 1 run scoreboard players add @s scores 500
 execute as @a[x=-56,y=23,z=-11,dx=0,dy=0,dz=0] unless score @s achievement_14 matches 1 run scoreboard players set @s achievement_14 1
 
@@ -82,25 +82,6 @@ execute as @a[x=-65,y=41,z=-10,dx=0,dy=0,dz=0] unless score @s achievement_15 ma
 execute as @a[x=-65,y=41,z=-10,dx=0,dy=0,dz=0] unless score @s achievement_15 matches 1 run scoreboard players set @s achievement_15 1
 
 #13-0
-execute as @a[x=-74,y=35,z=24,dx=0,dy=0,dz=0] unless score @s achievement_16 matches 1 run tellraw @a [{"selector":"@s","color": "aqua"},{"text": "达成了成就:[这他妈也能找到?]! 分数+233","color":"aqua","bold": true}]
+execute as @a[x=-74,y=35,z=24,dx=0,dy=0,dz=0] unless score @s achievement_16 matches 1 run tellraw @a [{"selector":"@s","color": "aqua"},{"text": "达成了成就:[这TM也能找到?]! 分数+233","color":"aqua","bold": true}]
 execute as @a[x=-74,y=35,z=24,dx=0,dy=0,dz=0] unless score @s achievement_16 matches 1 run scoreboard players add @s scores 233
 execute as @a[x=-74,y=35,z=24,dx=0,dy=0,dz=0] unless score @s achievement_16 matches 1 run scoreboard players set @s achievement_16 1
-
-#===
-execute as @a unless score @s achievement_lvl1 matches 1 if score @s 1_passed matches 1 if score @s 2_passed matches 1 if score @s 3_passed matches 1 run tellraw @a [{"selector":"@s","color": "aqua"},{"text": "完成了全部easy关卡! 分数+500","color":"green","bold": true}]
-execute as @a unless score @s achievement_lvl1 matches 1 if score @s 1_passed matches 1 if score @s 2_passed matches 1 if score @s 3_passed matches 1 run scoreboard players add @s scores 500
-execute as @a unless score @s achievement_lvl1 matches 1 if score @s 1_passed matches 1 if score @s 2_passed matches 1 if score @s 3_passed matches 1 run scoreboard players set @s achievement_lvl1 1
-
-
-execute as @a unless score @s achievement_lvl2 matches 1 if score @s 4_passed matches 1 if score @s 5_passed matches 1 if score @s 6_passed matches 1 run tellraw @a [{"selector":"@s","color": "aqua"},{"text": "完成了全部medium关卡! 分数+500","color":"dark_blue","bold": true}]
-execute as @a unless score @s achievement_lvl2 matches 1 if score @s 4_passed matches 1 if score @s 5_passed matches 1 if score @s 6_passed matches 1 run scoreboard players add @s scores 500
-execute as @a unless score @s achievement_lvl2 matches 1 if score @s 4_passed matches 1 if score @s 5_passed matches 1 if score @s 6_passed matches 1 run scoreboard players set @s achievement_lvl2 1
-
-
-execute as @a unless score @s achievement_lvl3 matches 1 if score @s 7_passed matches 1 if score @s 8_passed matches 1 if score @s 9_passed matches 1 run tellraw @a [{"selector":"@s","color": "aqua"},{"text": "完成了全部hard关卡! 分数+500","color":"gold","bold": true}]
-execute as @a unless score @s achievement_lvl3 matches 1 if score @s 7_passed matches 1 if score @s 8_passed matches 1 if score @s 9_passed matches 1 run scoreboard players add @s scores 500
-execute as @a unless score @s achievement_lvl3 matches 1 if score @s 7_passed matches 1 if score @s 8_passed matches 1 if score @s 9_passed matches 1 run scoreboard players set @s achievement_lvl3 1
-
-execute as @a unless score @s achievement_lvl4 matches 1 if score @s 10_passed matches 1 if score @s 1_passed matches 1 if score @s 12_passed matches 1 run tellraw @a [{"selector":"@s","color": "aqua"},{"text": "完成了全部extreme关卡! 分数+500","color":"red","bold": true}]
-execute as @a unless score @s achievement_lvl4 matches 1 if score @s 10_passed matches 1 if score @s 1_passed matches 1 if score @s 12_passed matches 1 run scoreboard players add @s scores 500
-execute as @a unless score @s achievement_lvl4 matches 1 if score @s 10_passed matches 1 if score @s 1_passed matches 1 if score @s 12_passed matches 1 run scoreboard players set @s achievement_lvl4 1

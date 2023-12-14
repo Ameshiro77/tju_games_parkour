@@ -44,13 +44,13 @@ execute as @s unless score @s achievement_11 matches 1 run tellraw @s ["13:"," ?
 execute as @s if score @s achievement_12 matches 1 run tellraw @s ["14:",{"text": " [梯子都要被拉断了...]","color":"gold"}]
 execute as @s unless score @s achievement_12 matches 1 run tellraw @s ["14:"," ???"]
 
-execute as @s if score @s achievement_14 matches 1 run tellraw @s ["15:",{"text": " [至臻旋转活板门!]","color":"white","bold": true}]
+execute as @s if score @s achievement_14 matches 1 run tellraw @s ["15:",{"text": " [看我的,活板门!]","color":"white","bold": true}]
 execute as @s unless score @s achievement_14 matches 1 run tellraw @s ["15:"," ???"]
 
 execute as @s if score @s achievement_15 matches 1 run tellraw @s ["16:",{"text": " [世界的原风景...]","color":"white","bold": true}]
 execute as @s unless score @s achievement_15 matches 1 run tellraw @s ["16:"," ???"]
 
-execute as @s if score @s achievement_16 matches 1 run tellraw @s ["17:",{"text": " [这他妈也能找到?]","color":"aqua","bold": true}]
+execute as @s if score @s achievement_16 matches 1 run tellraw @s ["17:",{"text": " [这TM也能找到?]","color":"aqua","bold": true}]
 execute as @s unless score @s achievement_16 matches 1 run tellraw @s ["17:"," ???"]
 
 tellraw @s ["============================"]

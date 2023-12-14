@@ -66,5 +66,6 @@ fill -74 31 -2 -74 32 -2 minecraft:end_gateway{Age:280}
 #l12
 fill -73 30 -19 -73 31 -19 minecraft:end_gateway{Age:280}
 
-#??
+#to back nightmare
 fill -1 26 0 -1 27 0 minecraft:end_gateway{Age:280}
+fill -21 5 0 -21 6 0 minecraft:end_gateway{Age:280}

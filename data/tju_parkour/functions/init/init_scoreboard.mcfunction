@@ -29,6 +29,9 @@ function tju_parkour:init/scoreboard/init_passed
 #成就
 function tju_parkour:init/scoreboard/init_achi
 
+#nightmare
+function tju_parkour:init/scoreboard/init_nightmare
+
 #重置最好通关时间
 function tju_parkour:init/scoreboard/init_lvltime
 
